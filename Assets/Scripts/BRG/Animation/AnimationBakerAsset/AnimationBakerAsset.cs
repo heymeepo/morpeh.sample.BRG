@@ -1,6 +1,7 @@
 ﻿#if UNITY_EDITOR
 using Prototypes.BRG.Animation.TAO.VertexAnimation;
 using Scellecs.Morpeh;
+using Sirenix.OdinInspector;
 using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
@@ -21,7 +22,9 @@ namespace Prototypes.BRG.Animation
         [SerializeField] private int textureWidth = 512;
         [SerializeField] private bool applyRootMotion = false;
 
-        [ContextMenu("Bake")]
+#if ODIN_INSPECTOR
+        [Button]
+#endif
         private void Bake()
         {
             if (CheckRequired())
