@@ -3,6 +3,7 @@ using Prototypes.Core.ECS;
 using Prototypes.Core.ECS.Destroy;
 using Scellecs.Morpeh;
 using Scellecs.Morpeh.Native;
+using Unity.Burst;
 using Unity.Collections;
 using Unity.Jobs;
 
@@ -44,6 +45,7 @@ namespace Prototypes.SamplesBRG.AnimationSample.ECS.Animation
         }
     }
 
+    [BurstCompile]
     public struct DieAnimationJob : IJobFor
     {
         [ReadOnly] public NativeFilter filter;
