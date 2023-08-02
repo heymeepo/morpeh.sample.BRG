@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a0dae4af833fe546bff398d81225551, type: 3}
+  m_Name: BoximonFieryAnimationBaker
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 1975194375736644, guid: 128a80094e00bf34fa2555766a7eea0e, type: 3}
+  shader: {fileID: 4800000, guid: 30df8b54dca65e14585694384e33b459, type: 3}
+  presetMaterial: {fileID: 2100000, guid: f1779f0d8b6a05547af012556b3fd93a, type: 2}
+  renderDataAsset: {fileID: 11400000, guid: 9c94121f88c0cc6429c0dade3305e043, type: 2}
+  animationDataAsset: {fileID: 11400000, guid: c8ab18b26473c6e4193be86247ed497c, type: 2}
+  animations:
+    pairs:
+    - clip: {fileID: 7400000, guid: 23c2411344a96a64182a32246ae8a5b7, type: 2}
+      animationStateComponent:
+        rid: 3417924942653816843
+    - clip: {fileID: 7400000, guid: 4f78f2d469a548d47a78a31a50d14023, type: 2}
+      animationStateComponent:
+        rid: 3417924942653816844
+    - clip: {fileID: 7400000, guid: f2a0489afbda84845972ba189c326ea0, type: 2}
+      animationStateComponent:
+        rid: 3417924942653816845
+  fps: 24
+  textureWidth: 512
+  applyRootMotion: 0
+  references:
+    version: 2
+    RefIds:
+    - rid: 3417924942653816843
+      type: {class: IdleAnimationComponent, ns: Prototypes.SamplesBRG.AnimationSample.ECS.Animation, asm: Assembly-CSharp}
+      data:
+        index: 0
+    - rid: 3417924942653816844
+      type: {class: MoveAnimationComponent, ns: Prototypes.SamplesBRG.AnimationSample.ECS.Animation, asm: Assembly-CSharp}
+      data:
+        index: 1
+    - rid: 3417924942653816845
+      type: {class: DieAnimationComponent, ns: Prototypes.SamplesBRG.AnimationSample.ECS.Animation, asm: Assembly-CSharp}
+      data:
+        index: 2

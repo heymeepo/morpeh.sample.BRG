@@ -1,0 +1,62 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a0dae4af833fe546bff398d81225551, type: 3}
+  m_Name: BoximonCyclopesAnimationBaker
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 1111084942782338, guid: 84493eaa65d75074ca2c6e2d8a90ff9a, type: 3}
+  shader: {fileID: 4800000, guid: 30df8b54dca65e14585694384e33b459, type: 3}
+  presetMaterial: {fileID: 2100000, guid: 641e51ebbef02464da661776af055548, type: 2}
+  renderDataAsset: {fileID: 11400000, guid: cc847fcfa76e4a74db1e51a310df18a9, type: 2}
+  animationDataAsset: {fileID: 11400000, guid: 8471f07eff6856045a85e3302e2166a5, type: 2}
+  animations:
+    pairs:
+    - clip: {fileID: 7400000, guid: 9bd2c9521a39a2c4f8a596a0bc637be6, type: 2}
+      animationStateComponent:
+        rid: 3417924942653816859
+    - clip: {fileID: 7400000, guid: fde2865ac81b61f47befaf5fbd184c15, type: 2}
+      animationStateComponent:
+        rid: 3417924942653816860
+    - clip: {fileID: 7400000, guid: 548dd68f0cff52b4cb612a8885df167b, type: 2}
+      animationStateComponent:
+        rid: 3417924942653816861
+    - clip: {fileID: 7400000, guid: 9c5c99e96480418439dcfe8bcb60a812, type: 2}
+      animationStateComponent:
+        rid: 3417924942653816862
+    - clip: {fileID: 7400000, guid: fd4730438ec04b346b775073ec5f5b01, type: 2}
+      animationStateComponent:
+        rid: 3417924942653816863
+  fps: 24
+  textureWidth: 512
+  applyRootMotion: 0
+  references:
+    version: 2
+    RefIds:
+    - rid: 3417924942653816859
+      type: {class: IdleAnimationComponent, ns: Prototypes.SamplesBRG.AnimationSample.ECS.Animation, asm: Assembly-CSharp}
+      data:
+        index: 0
+    - rid: 3417924942653816860
+      type: {class: MoveAnimationComponent, ns: Prototypes.SamplesBRG.AnimationSample.ECS.Animation, asm: Assembly-CSharp}
+      data:
+        index: 1
+    - rid: 3417924942653816861
+      type: {class: AttackAnimationComponent, ns: Prototypes.SamplesBRG.AnimationSample.ECS.Animation, asm: Assembly-CSharp}
+      data:
+        index: 2
+    - rid: 3417924942653816862
+      type: {class: TakeDamageAnimationComponent, ns: Prototypes.SamplesBRG.AnimationSample.ECS.Animation, asm: Assembly-CSharp}
+      data:
+        index: 3
+    - rid: 3417924942653816863
+      type: {class: DieAnimationComponent, ns: Prototypes.SamplesBRG.AnimationSample.ECS.Animation, asm: Assembly-CSharp}
+      data:
+        index: 4

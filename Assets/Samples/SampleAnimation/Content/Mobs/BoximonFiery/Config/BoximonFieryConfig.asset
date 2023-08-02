@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f973cb04a5ec38c4fa044b15542b6750, type: 3}
+  m_Name: BoximonFieryConfig
+  m_EditorClassIdentifier: 
+  test: 0
+  components:
+  - rid: 3417924942653816850
+  - rid: 3417924942653816852
+  - rid: 3417924942653816851
+  - rid: 3417924942653816853
+  testComponents: []
+  references:
+    version: 2
+    RefIds:
+    - rid: 3417924942653816850
+      type: {class: RenderComponentGroup, ns: Prototypes.BRG.ECS, asm: Assembly-CSharp}
+      data:
+        serializedComponent:
+          sharedData: {fileID: 11400000, guid: 9c94121f88c0cc6429c0dade3305e043, type: 2}
+    - rid: 3417924942653816851
+      type: {class: MovementComponentGroup, ns: Prototypes.SamplesBRG.AnimationSample.ECS.Movement, asm: Assembly-CSharp}
+      data:
+        moveSpeed: 4
+        turnSpeed: 4
+        facingMinAngle: 14
+    - rid: 3417924942653816852
+      type: {class: AnimationComponentGroup, ns: Prototypes.BRG.ECS.Animation, asm: Assembly-CSharp}
+      data:
+        serializedComponent:
+          sharedData: {fileID: 11400000, guid: c8ab18b26473c6e4193be86247ed497c, type: 2}
+    - rid: 3417924942653816853
+      type: {class: MobBehaviourComponentGroup, ns: Prototypes.SamplesBRG.AnimationSample.ECS.MobBehaviour, asm: Assembly-CSharp}
+      data:
+        waitingTime: 5

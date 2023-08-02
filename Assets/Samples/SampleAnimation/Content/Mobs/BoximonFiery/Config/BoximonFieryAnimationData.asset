@@ -1,0 +1,56 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71409e5892f73174b8668c3d59bc1ce3, type: 3}
+  m_Name: BoximonFieryAnimationData
+  m_EditorClassIdentifier: 
+  id: 
+  animations:
+  - frames: 32
+    maxFrames: 64
+    animationMapIndex: 0
+    colorMapIndex: -1
+    frameTime: 0.375
+    duration: 0.484375
+    isLooping: 1
+  - frames: 16
+    maxFrames: 64
+    animationMapIndex: 1
+    colorMapIndex: -1
+    frameTime: 0.375
+    duration: 0.234375
+    isLooping: 1
+  - frames: 40
+    maxFrames: 64
+    animationMapIndex: 2
+    colorMapIndex: -1
+    frameTime: 0.375
+    duration: 0.609375
+    isLooping: 0
+  components:
+  - rid: 3417924942653816846
+  - rid: 3417924942653816847
+  - rid: 3417924942653816848
+  references:
+    version: 2
+    RefIds:
+    - rid: 3417924942653816846
+      type: {class: IdleAnimationComponent, ns: Prototypes.SamplesBRG.AnimationSample.ECS.Animation, asm: Assembly-CSharp}
+      data:
+        index: 0
+    - rid: 3417924942653816847
+      type: {class: MoveAnimationComponent, ns: Prototypes.SamplesBRG.AnimationSample.ECS.Animation, asm: Assembly-CSharp}
+      data:
+        index: 1
+    - rid: 3417924942653816848
+      type: {class: DieAnimationComponent, ns: Prototypes.SamplesBRG.AnimationSample.ECS.Animation, asm: Assembly-CSharp}
+      data:
+        index: 2

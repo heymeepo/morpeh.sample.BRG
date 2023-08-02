@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e26aaaac799a1bf4699ea2e59523d84c, type: 3}
+  m_Name: CubeRenderData
+  m_EditorClassIdentifier: 
+  sharedMesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+  sharedMaterial: {fileID: 2100000, guid: d4221740afce75d4d9f1ebc0a9fce95d, type: 2}
+  materialProperties:
+    instancedProperties:
+    - rid: 3417924970184966153
+  references:
+    version: 2
+    RefIds:
+    - rid: 3417924970184966153
+      type: {class: BaseColorPropertyComponent, ns: Prototypes.BRG.ECS.Properties, asm: Assembly-CSharp}
+      data:
+        value:
+          x: 0
+          y: 0
+          z: 0
+          w: 0
